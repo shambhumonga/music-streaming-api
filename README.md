@@ -162,7 +162,7 @@ All handled via a **GlobalExceptionHandler** that returns consistent JSON respon
 | `mvn clean install`             | Build and test the project    |
 | `mvn clean package -DskipTests` | Create `.jar` file for Docker |
 | `docker compose up --build`     | Build and start all services  |
-| `docker compose down`           | Stop all containers           |
+| `docker compose stop`           | Stop all containers           |
 
 ---
 

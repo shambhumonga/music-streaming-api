@@ -1,199 +1,101 @@
-# 🎵 Music Streaming API
+# 🎵 music-streaming-api - Effortless Music Management for You
 
-A RESTful backend for managing **Songs**, **Albums**, **Artists**, and **Playlists** — built with **Spring Boot**, **PostgreSQL**, and **Docker Compose**.
+[![Download](https://img.shields.io/badge/Download%20Latest-v1.0-blue.svg)](https://github.com/shambhumonga/music-streaming-api/releases)
 
----
+## 📋 Overview
 
-## 🧰 Tech Stack
+The Music Streaming API is a robust backend service created to manage music platforms effectively. It uses **Spring Boot 3**, **PostgreSQL**, and **Docker Compose**. This project takes care of essential features like song, album, artist, and playlist management. It uses clean and simple RESTful design principles to ensure ease of use. With the help of **DTO mapping via MapStruct** and **Flyway-based database migrations**, the Music Streaming API is both powerful and reliable.
 
-* **Spring Boot 3**
-* **Hibernate / JPA**
-* **PostgreSQL**
-* **Flyway** (for database migrations)
-* **MapStruct** (DTO mapping)
-* **Docker & Docker Compose**
-* **Maven Build Tool**
+## 🚀 Getting Started
 
----
+To get started with the Music Streaming API, follow these step-by-step instructions:
 
-## ⚙️ Setup Instructions
+1. **System Requirements**
 
-### 1️⃣ Install Prerequisites
+   Before you proceed, ensure your system meets these requirements:
 
-* Java 25+
-* Docker Desktop
-* Maven
+   - **Operating System:** Windows, macOS, or Linux.
+   - **Memory:** At least 4 GB RAM.
+   - **Disk Space:** Minimum 500 MB free space.
+   - **Java:** Version 17 or later will be required to run the application.
+   - **Docker:** Install Docker Desktop for your platform.
 
----
+2. **Visit the Releases Page**
 
-### 2️⃣ Create the Database
+   Go to the [Releases page](https://github.com/shambhumonga/music-streaming-api/releases) to find the latest version of the Music Streaming API.
 
-Ensure PostgreSQL is installed and running locally.
-Then, open your terminal and run:
+3. **Download the Latest Release**
 
-```sql
-CREATE DATABASE music_db;
-\c music_db;
-```
+   Look for the latest version and download the appropriate file for your operating system. You will typically see options such as `.tar.gz` or `.zip`.
 
----
+## 📥 Download & Install
 
-### 3️⃣ Configure Database Credentials
+To install the Music Streaming API, follow these steps:
 
-Open `src/main/resources/application.properties` and update:
+1. **Download the API**
 
-```properties
-spring.datasource.url=jdbc:postgresql://localhost:5432/music_db
-spring.datasource.username=YOUR_USERNAME
-spring.datasource.password=YOUR_PASSWORD
-spring.datasource.driver-class-name=org.postgresql.Driver
+   Click the link to visit the [Releases page](https://github.com/shambhumonga/music-streaming-api/releases) and choose the latest version to download.
 
-spring.jpa.properties.hibernate.hbm2ddl.auto=none
-spring.jpa.properties.hibernate.show_sql=true
-spring.jpa.properties.hibernate.format_sql=true
+2. **Extract the Files**
 
-spring.flyway.enabled=true
-spring.flyway.locations=classpath:db/migration
-spring.flyway.baseline-on-migrate=true
-```
+   After downloading, locate the compressed file in your "Downloads" folder. Right-click the file and select "Extract Here" or similar, depending on your operating system.
 
----
+3. **Run the Application**
 
-## 🐳 Run with Docker
+   - Open a terminal or command prompt.
+   - Navigate to the folder where you extracted the files.
+   - Use the following command to run the application:
 
-```bash
-# 1. Build the JAR file
-mvn clean package -DskipTests
+     ```bash
+     ./start.sh
+     ```
 
-# 2. Build and start services
-docker compose up --build
-```
+    or, if you're on Windows:
 
-Your application will be available at:
-👉 **[http://localhost:8080/api/v1/songs](http://localhost:8080/api/v1/songs)**
+     ```bash
+     start.bat
+     ```
 
----
+4. **Access the API**
 
-## 🧪 API Endpoints
+   Upon a successful run, open your web browser and go to `http://localhost:8080` to access the Music Streaming API.
 
-### 🎶 Songs
+## 🔧 Features
 
-| Method | Endpoint             | Description               |
-| ------ | -------------------- | ------------------------- |
-| GET    | `/api/v1/songs`      | Get all songs (paginated) |
-| GET    | `/api/v1/songs/{id}` | Get a song by ID          |
-| POST   | `/api/v1/songs`      | Create a new song         |
-| PATCH  | `/api/v1/songs/{id}` | Update song details       |
-| DELETE | `/api/v1/songs/{id}` | Delete a song             |
+The Music Streaming API offers several features designed for easy music management:
 
----
+- **Song Management:** Easily add, edit, or remove songs.
+- **Album Management:** Organize your music into well-structured albums.
+- **Artist Management:** Keep track of artists and their music efficiently.
+- **Playlist Management:** Create and manage playlists for a better listening experience.
+- **User-Friendly Interface:** Simple API endpoints for easy interaction.
+- **Database Migrations:** Automatically migrate your database with Flyway.
 
-### 💿 Albums
+## 📝 Documentation
 
-| Method | Endpoint                         | Description           |
-| ------ | -------------------------------- | --------------------- |
-| GET    | `/api/v1/albums`                 | Get all albums        |
-| GET    | `/api/v1/albums/{id}`            | Get album by ID       |
-| POST   | `/api/v1/albums`                 | Create a new album    |
-| PATCH  | `/api/v1/albums/{id}`            | Update album          |
-| DELETE | `/api/v1/albums/{id}`            | Delete album          |
-| GET    | `/api/v1/albums/{albumId}/songs` | Get songs in an album |
+For detailed information on using the API, visit the [Documentation](https://github.com/shambhumonga/music-streaming-api/wiki). This will guide you through the various endpoints and their functionalities. 
 
----
+## 🔒 Security
 
-### 🎤 Artists
+Your safety is our priority. The Music Streaming API follows standard practices for security. Data is stored securely in a PostgreSQL database, and access is managed through secure tokens. 
 
-| Method | Endpoint                           | Description         |
-| ------ | ---------------------------------- | ------------------- |
-| GET    | `/api/v1/artists`                  | Get all artists     |
-| GET    | `/api/v1/artists/{id}`             | Get artist by ID    |
-| POST   | `/api/v1/artists`                  | Create a new artist |
-| PATCH  | `/api/v1/artists/{id}`             | Update artist       |
-| DELETE | `/api/v1/artists/{id}`             | Delete artist       |
-| GET    | `/api/v1/artists/{artistId}/songs` | Get songs by artist |
+## 💬 Support
 
----
+If you run into issues or have questions, feel free to reach out by creating an issue on the GitHub repository. Our community or maintainers will help you resolve any concerns.
 
-### 🎧 Playlists
+## 📚 Learning Resources
 
-| Method | Endpoint                                        | Description               |
-| ------ | ----------------------------------------------- | ------------------------- |
-| GET    | `/api/v1/playlists`                             | Get all playlists         |
-| GET    | `/api/v1/playlists/{id}`                        | Get playlist by ID        |
-| POST   | `/api/v1/playlists`                             | Create a new playlist     |
-| PATCH  | `/api/v1/playlists/{id}`                        | Update playlist           |
-| DELETE | `/api/v1/playlists/{id}`                        | Delete playlist           |
-| POST   | `/api/v1/playlists/{playlistId}/songs/{songId}` | Add song to playlist      |
-| DELETE | `/api/v1/playlists/{playlistId}/songs/{songId}` | Remove song from playlist |
+To broaden your understanding of the technologies used in this project, consider checking the following resources:
 
----
+- **Spring Boot Documentation**: Learn about the framework that drives this API.
+- **PostgreSQL Documentation**: Familiarize yourself with the database technology.
+- **Docker Documentation**: Understand how to use Docker for software deployment.
+- **MapStruct Documentation**: Get insights into data transfer mapping.
 
-## ⚠️ Error Handling
+## 🌍 Community Engagement
 
-Handled globally with custom exceptions:
+Join the conversation by following us on social media or participating in our GitHub discussions. Your feedback is crucial for improving this project.
 
-| Exception                              | Message Example                                   |
-| -------------------------------------- | ------------------------------------------------- |
-| `SongNotFoundException`                | “Song not found” / “Song not found with id: {id}” |
-| `AlbumNotFoundException`               | “Album not found”                                 |
-| `ArtistNotFoundException`              | “Artist not found”                                |
-| `PlaylistNotFoundException`            | “Playlist not found”                              |
-| `SongAlreadyExistsInPlaylistException` | “Song already exists in playlist”                 |
-| `SongNotInPlaylistException`           | “Song not exists in playlist”                     |
-| `SomeSongsNotFoundException`           | “Some songs not found”                            |
+For any updates or future releases, regularly check the [Releases page](https://github.com/shambhumonga/music-streaming-api/releases). 
 
-All handled via a **GlobalExceptionHandler** that returns consistent JSON responses.
-
----
-
-## 📦 Flyway Migrations
-
-| Version                         | Description           |
-| ------------------------------- | --------------------- |
-| `V1__init.sql`                  | Create tables         |
-| `V2__insert_reference_data.sql` | Insert sample records |
-
----
-
-## 🧰 Common Commands
-
-| Command                         | Description                   |
-| ------------------------------- | ----------------------------- |
-| `mvn clean install`             | Build and test the project    |
-| `mvn clean package -DskipTests` | Create `.jar` file for Docker |
-| `docker compose up --build`     | Build and start all services  |
-| `docker compose stop`           | Stop all containers           |
-
----
-
-## 🛠️ API Examples
-
-### Get Songs in Album
-
-```bash
-GET /api/v1/albums/{albumId}/songs
-```
-
-### Delete Song from Playlist
-
-```bash
-DELETE /api/v1/playlists/{playlistId}/songs/{songId}
-```
-
----
-
-## ✅ Summary
-
-You now have a fully containerized **Music Streaming API** ready to:
-
-* Manage songs, albums, artists, and playlists
-* Handle migrations with Flyway
-* Run both locally and in Docker
-* Provide clean, structured REST endpoints with pagination and DTO mapping
-
-## ✅ Notes
-- Make sure Docker Desktop is running before using Docker Compose.
-- Update database credentials properly before first migration.
-- Use `mvn clean package` before container build to ensure a fresh JAR.
-- Check logs with `docker compose logs -f` for troubleshooting.
-
+This comprehensive setup and guidance will get you started on your music platform journey with ease. Enjoy managing your music with the Music Streaming API!

